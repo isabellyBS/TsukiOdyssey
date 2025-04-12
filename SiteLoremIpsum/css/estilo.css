@@ -1,0 +1,91 @@
+/*
+#09092d azul escuro
+#f2f1ed "branco"
+#393781 roxo escuro
+#f4bba4 bege
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;      
+}
+body{
+    background-color: #393781;
+} 
+
+header{
+    background-color: #09092d;
+    color: #f2f1ed;
+    padding: 15px 15px 15px 15px;
+    width: 100%;
+    top: 0;
+    position: flex;
+    z-index: 1000;
+}
+
+header .container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+nav ul li{
+    margin-left: 5%;
+}
+
+nav ul li a{
+    color: #f2f1ed;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #f4bba4;
+}
+
+ul li, p{
+    line-height: 1.5;
+}
+h1{
+    line-height: 3;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer{
+    font-weight: bold;
+}
+
+
+@media (max-width:381px){
+    header .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul{
+        margin-top: 10px;
+        flex-direction: column;
+    }
+}
