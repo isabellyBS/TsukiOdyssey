@@ -1,7 +1,8 @@
 /*
-#09092d azul escuro
+#1c232e azul escuro
 #f2f1ed "branco"
 #393781 roxo escuro
+#03484c verde agua escuro
 #f4bba4 bege
 */
 
@@ -19,16 +20,16 @@
     padding: 20px;      
 }
 body{
-    background-color: #393781;
+    background-color: #1c3166;
 } 
 
 header{
-    background-color: #09092d;
-    color: #f2f1ed;
+    background-color: #03484c;
+    color: #40ffdc;
     padding: 15px 15px 15px 15px;
     width: 100%;
     top: 0;
-    position: flex;
+    position: fixed;
     z-index: 1000;
 }
 
@@ -42,6 +43,7 @@ header .container{
 .logo{
     font-size: 2em;
     font-weight: bold;
+    margin-inline-end: auto;
 }
 
 nav ul{
@@ -58,6 +60,24 @@ nav ul li{
 nav ul li a{
     color: #f2f1ed;
     text-decoration: none;
+}
+
+#inicio{
+    margin-top: 8rem;
+}
+
+.banner{
+    background: url(../Img/Banner.webp) no-repeat center/cover;
+    height: 10rem;
+    display: flex;
+    margin-top: 90em;
+    align-items: center;
+    justify-content: center;
+    color: #f2f1ed;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 0.25rem 0.25rem 0.8em #85d7dd;
+
 }
 
 a:hover{
@@ -78,6 +98,12 @@ footer{
 }
 
 
+
+@media (max-width: 766px){
+    .banner{
+        height: 27rem;}
+}
+
 @media (max-width:381px){
     header .container{
         flex-direction: column;
@@ -87,5 +113,9 @@ footer{
     nav ul{
         margin-top: 10px;
         flex-direction: column;
+    }
+    
+    .banner{
+        height: 50rem;
     }
 }
