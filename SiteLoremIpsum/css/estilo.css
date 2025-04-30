@@ -24,7 +24,7 @@ body{
 } 
 
 header{
-    background-color: #03484c;
+    background-color: #71dbe0;
     color: #40ffdc;
     padding: 15px 15px 15px 15px;
     width: 100%;
@@ -58,7 +58,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #f2f1ed;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -81,7 +81,7 @@ nav ul li a{
 }
 
 a:hover{
-    color: #f4bba4;
+    color: #127f85;
 }
 
 ul li, p{
