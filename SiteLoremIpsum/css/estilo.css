@@ -80,6 +80,63 @@ nav ul li a{
 
 }
 
+
+
+
+#sobre{
+    padding: 3rem;
+    background-color: azure;
+    color: #03484c;
+}
+
+.sobre-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    max-width: 140rem;
+    margin: auto;
+}
+
+.sobre-esquerda{
+    flex: 1;
+    padding: 2rem;
+}
+.sobre-esquerda h1{
+    font-size: 1.5em;
+    margin-bottom: 2rem;
+}
+.sobre-esquerda p{
+    font-size: 1;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+.sobre-direita{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    flex: 1;
+}
+
+
+.hex{
+    width: 140px;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: rgb(224, 212, 196);
+    position: relative;
+}
+.hex img{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+}
+
+
+
 a:hover{
     color: #127f85;
 }
@@ -99,13 +156,15 @@ footer{
 
 
 
+
+
 @media (max-width: 766px){
     .banner{
         height: 27rem;}
 }
 
 @media (max-width:381px){
-    header .container{
+    header .container, .sobre-container{
         flex-direction: column;
         text-align: center;
     }
