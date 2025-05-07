@@ -14,6 +14,20 @@
     scroll-behavior: smooth;
 }
 
+
+a:hover{
+    color: #127f85;
+}
+
+ul li, p{
+    line-height: 1.5;
+}
+h1{
+    line-height: 3;
+    text-align: center;
+    font-weight: bold;
+}
+
 .container{
     max-width: 1200px;
     margin: auto;
@@ -22,6 +36,10 @@
 body{
     background-color: #1c3166;
 } 
+
+section{
+    scroll-margin-top: 120px;
+}
 
 header{
     background-color: #71dbe0;
@@ -136,18 +154,8 @@ nav ul li a{
 }
 
 
-
-a:hover{
-    color: #127f85;
-}
-
-ul li, p{
-    line-height: 1.5;
-}
-h1{
-    line-height: 3;
-    text-align: center;
-    font-weight: bold;
+.imgcard{
+    width: 70%;
 }
 
 footer{
@@ -167,6 +175,7 @@ footer{
     header .container, .sobre-container{
         flex-direction: column;
         text-align: center;
+        scroll-margin-top: 240px;
     }
 
     nav ul{
