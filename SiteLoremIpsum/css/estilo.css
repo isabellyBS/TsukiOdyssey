@@ -158,6 +158,44 @@ nav ul li a{
     width: 70%;
 }
 
+#ex .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#ex .item{
+    background-color: #3f5691;
+    border: 1px solid #445b97;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+#ex .item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#ex .item:active{
+
+}
+
+#ex .item p {
+
+}
+
+#ex .imgcard img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 footer{
     font-weight: bold;
 }
