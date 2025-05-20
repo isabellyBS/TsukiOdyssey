@@ -156,11 +156,12 @@ nav ul li a{
 
 .imgcard{
     width: 70%;
+    margin: auto;
 }
 
 #ex .container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     text-align: center;
     padding: 50px 0;
@@ -177,16 +178,19 @@ nav ul li a{
 }
 
 #ex .item:hover{
-    transform: translateY(-5px);
+    transform: translateY(-5px);/*para cima  quando passa o mause*/
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 #ex .item:active{
-
+    transform: scale(0.98);/*reduz o tamanho do card ao clicar*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 #ex .item p {
-
+    margin-top: 15px;
+    font-size: 0.95em;
+    color: #f2f1ed;
 }
 
 #ex .imgcard img{
