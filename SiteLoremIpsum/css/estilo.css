@@ -16,7 +16,7 @@
 
 
 a:hover{
-    color: #127f85;
+    color:seashell;
 }
 
 ul li, p{
@@ -26,6 +26,10 @@ h1{
     line-height: 3;
     text-align: center;
     font-weight: bold;
+}
+
+h3{
+    color: #f2f1ed;
 }
 
 .container{
@@ -204,9 +208,71 @@ footer{
     font-weight: bold;
 }
 
+/* modal-card */
+.modal{
+    background: #445b97;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: #00f2ff;
+    margin: auto;
+    text-align: center;
+}
 
+.card{
+    max-width: 300px;
+}
 
+.card h3{
+    margin-top: 0;
+}
 
+.btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #5c75b4;
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* modal-modal */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0e1d4450;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal:target{
+    display: flex;
+}
+
+.modal-content{
+    background-color: #5c75b4;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: #ff0000;
+}
+
+.close-btn{
+    display: inline-block;
+    margin-top: 20 px;
+    padding: 8px 16px;
+    background: #748ecf;
+    color: rgb(252, 255, 240);
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
 @media (max-width: 766px){
     .banner{
