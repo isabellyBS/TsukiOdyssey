@@ -215,16 +215,9 @@ footer{
     border-radius: 15px;
     box-shadow: #00f2ff;
     margin: auto;
-    text-align: center;
-}
+    text-align: justify;
+} 
 
-.card{
-    max-width: 300px;
-}
-
-.card h3{
-    margin-top: 0;
-}
 
 .btn{
     display: inline-block;
@@ -255,19 +248,33 @@ footer{
 }
 
 .modal-content{
+    max-height: 90vh;
+    overflow-y: auto;
     background-color: #5c75b4;
     padding: 30px;
     border-radius: 12px;
-    max-width: 400px;
-    text-align: center;
-    box-shadow: #ff0000;
+    max-width: 600px;
+    text-align: justify;
+    box-shadow: 0 5px 20px #261a68ab;
+}
+
+.modal-content h4{
+    margin-top: 2%;
+    font-size: 1.1rem;
+    margin-bottom: 2%;
+}
+
+.modal-content h3{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1.4rem;
 }
 
 .close-btn{
     display: inline-block;
     margin-top: 20 px;
     padding: 8px 16px;
-    background: #748ecf;
+    background: #ce5652;
     color: rgb(252, 255, 240);
     text-decoration: none;
     border-radius: 8px;
@@ -277,6 +284,14 @@ footer{
 @media (max-width: 766px){
     .banner{
         height: 27rem;}
+
+    .modal{
+        margin-top: 100px;
+    }
+
+    .modal-content{
+        max-height: 60vh;
+    }
 }
 
 @media (max-width:381px){
