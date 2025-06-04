@@ -10,8 +10,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     scroll-behavior: smooth;
+    font-family: "Arvo", serif; /*nova fonte-family */
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -26,12 +29,16 @@ h1{
     line-height: 3;
     text-align: center;
     font-weight: bold;
+    color: antiquewhite;
 }
 
 h3{
     color: #f2f1ed;
 }
 
+p{
+    color: antiquewhite;
+}
 .container{
     max-width: 1200px;
     margin: auto;
@@ -46,7 +53,7 @@ section{
 }
 
 header{
-    background-color: #71dbe0;
+    background-color: #6d8fdf;
     color: #40ffdc;
     padding: 15px 15px 15px 15px;
     width: 100%;
@@ -63,7 +70,7 @@ header .container{
 }
 
 .logo{
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: bold;
     margin-inline-end: auto;
 }
@@ -96,13 +103,15 @@ nav ul li a{
     align-items: center;
     justify-content: center;
     color: #f2f1ed;
-    font-size: 1.5em;
+    font-size: 1.7em;
     text-align: center;
     text-shadow: 0.25rem 0.25rem 0.8em #85d7dd;
 
 }
 
-
+.centraliza{
+    text-align: center;
+}
 
 
 #sobre{
@@ -125,11 +134,11 @@ nav ul li a{
     padding: 2rem;
 }
 .sobre-esquerda h1{
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-bottom: 2rem;
 }
 .sobre-esquerda p{
-    font-size: 1;
+    font-size: 1.4em;
     line-height: 1.5;
     text-align: justify;
     margin-top: 1rem;
@@ -193,7 +202,7 @@ nav ul li a{
 
 #ex .item p {
     margin-top: 15px;
-    font-size: 0.95em;
+    font-size: 1.15em;
     color: #f2f1ed;
 }
 
@@ -260,14 +269,14 @@ footer{
 
 .modal-content h4{
     margin-top: 2%;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-bottom: 2%;
 }
 
 .modal-content h3{
     margin-top: 2%;
     margin-bottom: 2%;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .close-btn{
