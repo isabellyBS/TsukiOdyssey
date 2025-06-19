@@ -1,5 +1,5 @@
-# LoremImpsum
-Site sobre o lorem ipsum...
+# Tsuki's odyssey
+Site sobre o jogo "Tsuki's odyssey"...
 
-(Desenvolvimento)
+(Em desenvolvimento)
 ## https://isabellybs.github.io/TsukiOdyssey
