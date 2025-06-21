@@ -4,6 +4,13 @@
 #393781 roxo escuro
 #03484c verde agua escuro
 #f4bba4 bege
+
+
+#E07F90 rosinha
+#F3A672 laranjinha
+#FCEED3 beginho
+#A5DBA1 verdinho
+#A6D4E4 azulzinho
 */
 
 *{
@@ -12,14 +19,18 @@
     box-sizing: border-box;
     /* font-family: Arial, sans-serif; */
     scroll-behavior: smooth;
-    font-family: "Arvo", serif; /*nova fonte-family */
-    font-weight: 400;
+    
+    /*nova fonte-family */
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
+    font-variation-settings:"wdth" 100;
 }
 
 
 a:hover{
-    color:seashell;
+    color: rgb(209, 152, 66);
+    transition: 0.18s;
 }
 
 ul li, p{
@@ -37,12 +48,12 @@ h3{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     padding: 20px;      
 }
 body{
-    background-color: #1c3166;
+    background-color: #A6D4E4;
 } 
 
 section{
@@ -50,8 +61,8 @@ section{
 }
 
 header{
-    background-color: #6d8fdf;
-    color: #40ffdc;
+    background-color:#f8e6c1 ;
+    color: rgba(223, 154, 108, 0.842);
     padding: 15px 15px 15px 15px;
     width: 100%;
     top: 0;
@@ -99,7 +110,7 @@ nav ul li a{
 }
 
 .banner{
-    background: url(../Img/Banner.webp) no-repeat center/cover;
+    background: url(../Img/maibeBanner.webp) no-repeat center/cover;
     height: 10rem;
     display: flex;
     margin-top: 90em;
@@ -116,6 +127,21 @@ nav ul li a{
     text-align: center;
 }
 
+.sobre-container .sobre-esquerda .fonte{
+    font-size: 1.14em;
+}
+
+#sobre a:link,#sobre a:visited{
+    color: #03484c;
+    text-decoration: none;
+}
+
+#sobre a:hover,#sobre a:active{
+    color: #f2f1ed;
+    background-color: #03484c;
+    padding: 3px;
+    text-decoration: none;
+}
 
 #sobre{
     padding: 3rem;
@@ -159,8 +185,8 @@ nav ul li a{
 
 
 .hex{
-    width: 140px;
-    border-radius: 1rem;
+    width: 200px;
+    border-radius: 300px;
     overflow: hidden;
     background-color: rgb(224, 212, 196);
     position: relative;
@@ -171,13 +197,11 @@ nav ul li a{
    object-fit: cover;
 }
 
+/* #ex{
+    background: linear-gradient(to bottom, #85d7dd 95%, rgb(241, 241, 202) 100%);
+} */
 
-.imgcard{
-    width: 70%;
-    margin: auto;
-}
-
-#ex .container{
+#ex .container, #gal .container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
@@ -186,8 +210,8 @@ nav ul li a{
 }
 
 #ex .item{
-    background-color: #3f5691;
-    border: 1px solid #445b97;
+    background-color: #a6e4c0;
+    border: 1px solid #A5DBA1;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
@@ -216,6 +240,7 @@ nav ul li a{
     max-width: 300px;
     height: auto;
     margin-bottom: 10px;
+    border-radius: 60px 30px;
 }
 
 footer{
@@ -224,7 +249,7 @@ footer{
 
 /* modal-card */
 .modal{
-    background: #445b97;
+    background: #E07F90;
     padding: 20px;
     border-radius: 15px;
     box-shadow: #00f2ff;
@@ -238,17 +263,22 @@ footer{
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background: #5c75b4;
+    background: #688a65;
     color: aliceblue;
     text-decoration: none;
     border-radius: 8px;
     cursor: pointer;
 }
 
+.btn:hover{
+    color: aliceblue;
+    transform: scale(1.05);
+}
+
 /* modal-modal */
 .modal{
     position: fixed;
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -263,14 +293,15 @@ footer{
 }
 
 .modal-content{
-    max-height: 90vh;
+    max-height: 70vh;
+    margin-top: 120px;
     overflow-y: auto;
-    background-color: #5c75b4;
+    background-color: #E07F90;
     padding: 30px;
     border-radius: 12px;
     max-width: 600px;
     text-align: justify;
-    box-shadow: 0 5px 20px #261a68ab;
+    box-shadow: 0 5px 20px #703f48ab;
 }
 
 .modal-content h4{
@@ -296,6 +327,42 @@ footer{
     text-decoration: none;
     border-radius: 8px;
     cursor: pointer;
+}
+
+/* galeria */
+
+#gal{
+    /* background: #97c8d8; */
+    background: linear-gradient(to top, #97c8d8 83%, #A6D4E4 100%);
+}
+
+#gal img { 
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 3px;
+    border-radius: 60px 30px;
+} 
+
+#gal .item{
+    background-color: #a6e4c0;
+    border: 1px solid #A5DBA1;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor:pointer;
+    margin: 10px;
+}
+
+#gal .item:hover{
+    transform: translateY(-5px);/*para cima  quando passa o mause*/
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#gal .item:active{
+    transform: scale(0.98);/*reduz o tamanho do card ao clicar*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.55);
 }
 
 @media (max-width: 766px){
@@ -356,4 +423,11 @@ footer{
         height: 50rem;
     }
 
+}
+
+@media (max-height: 490px){
+    .modal-content{
+        max-height: 50vh;
+        margin-top: auto+20px;
+    }
 }
