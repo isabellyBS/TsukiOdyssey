@@ -77,13 +77,14 @@ header .container{
     flex-wrap: wrap;
 }
 
-.logo{
+.logo, .logo a:link,.logo a:visited{
     /* width: 5px;
     height: auto ;
     margin-inline-end: auto; */
     font-size: 2em;
     font-weight: bold;
-    
+    color: rgba(223, 154, 108, 0.842);
+    text-decoration: none;
 }
 
 
@@ -110,7 +111,21 @@ nav ul li a{
 }
 
 .banner{
-    background: url(../Img/maibeBanner.webp) no-repeat center/cover;
+    background: url(../Img/banner/maibeBanner.webp) no-repeat center/cover;
+    height: 10rem;
+    display: flex;
+    margin-top: 90em;
+    align-items: center;
+    justify-content: center;
+    color: #f2f1ed;
+    font-size: 1.7em;
+    text-align: center;
+    text-shadow: 0.25rem 0.25rem 0.8em #85d7dd;
+
+}
+
+.bannercontato{
+    background: url(../Img/banner/banneDoContato.jpg) no-repeat center/cover;
     height: 10rem;
     display: flex;
     margin-top: 90em;
