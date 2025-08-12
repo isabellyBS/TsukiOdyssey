@@ -262,6 +262,28 @@ footer{
     font-weight: bold;
 }
 
+
+
+
+
+/* Faz o footer ficar no rodapé da página de enviado */
+
+
+body.paginamensagem {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  body.paginamensagem main {
+    flex: 1;
+  }  
+      
+  .mensagem{
+    margin-top: 10%; 
+    background-color: #f8e6c1; 
+  }
+
 /* modal-card */
 .modal{
     background: #E07F90;
