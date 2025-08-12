@@ -32,8 +32,82 @@
   </section>
   <main>
       <section id="contato">
-        <h1>contato</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, blanditiis voluptates pariatur quas et expedita ipsum laudantium vel odio dolorum id veritatis cum! Veniam itaque facilis, rerum quia natus inventore.</p>
+        <div class="container">
+          <h1 class="centraliza">contato</h1>
+          <form class="formulario-contato" action="https://formsubmit.com/isabellybsmcm@gmail.com" method="post">
+            <div class="grupo-form">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="grupo-form">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="grupo-form">
+              <label for="idade">Idade:</label>
+              <input type="number" id="idade" name="idade" min="3" max="140" required>
+            </div>
+
+            <div class="grupo-form">
+              <label for="data">Data de hoje (quando preencher o formulário):</label>
+              <input type="date" id="data" name="data" required>
+            </div>
+
+            <div class="grupo-form">
+              <label for="pronome">Pronome:</label>
+              <select name="pronome" id="pronome">
+                <option value="e">Ele</option>
+                <option value="a">Ela</option>
+                <option value="X">Outro</option>
+              </select>
+            </div>
+
+            <div class="grupo-form">
+              <label>Já conhecia o jogo?</label>
+              <input type="radio" name="conhecia" value="ss">Sim
+              <input type="radio" name="conhecia" value="nn">Não
+            </div>
+
+            <div class="grupo-form">
+              <label>Tem algum personagem que gostaria de saber mais?</label>
+              <input type="checkbox" name="personagem[]" value="tsuki">Tsuki
+              <input type="checkbox" name="personagem[]" value="chi">Chi
+              <input type="checkbox" name="personagem[]" value="moca">Moca
+              <input type="checkbox" name="personagem[]" value="pipi">Pipi
+              <input type="checkbox" name="personagem[]" value="yori">Yori
+              <input type="checkbox" name="personagem[]" value="outro">Outro
+            </div>
+
+            <div class="grupo-form">
+              <label for="cor">Cor combina com o site</label>
+              <input type="color" id="cor" name="cor" required>
+            </div>
+
+            <div class="grupo-form">
+              <label>Quanto gostou</label>
+              <input type="range" min="0" max="100" name="gostou" required>
+            </div>
+
+            <div class="grupo-form">
+              <label for="mensagem">O  motivo pelo contato:</label>
+              <textarea id="mensagem" name="mensagem" rows="3" required></textarea>
+            </div>
+<!-- 
+            <div class="grupo-form">
+              <label for="reset">(resetar o que preencheu)</label>
+              <input type="reset" id="reset" name="reset"><br><br>
+            </div> -->
+
+            <div class="grupo-form centraliza">
+              <button type="submit" class="btn">Enviar</button>
+              <input type="hidden" name="_captcha" value="false"> 
+              <input type="hidden" name="_next" value="https://isabellybs.github.io/TsukiOdyssey/enviadoSucesso.html">
+            </div>
+          </form>
+        </div>
+
       </section>
   </main>
     <footer>
