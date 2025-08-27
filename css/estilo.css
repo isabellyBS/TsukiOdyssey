@@ -75,13 +75,14 @@ header .container{
     justify-content:space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 5px;
 }
 
 .logo, .logo a:link,.logo a:visited{
     /* width: 5px;
     height: auto ;
     margin-inline-end: auto; */
-    font-size: 2em;
+    font-size: 40px;
     font-weight: bold;
     color: rgba(223, 154, 108, 0.842);
     text-decoration: none;
@@ -107,14 +108,14 @@ nav ul li a{
 }
 
 #inicio{
-    margin-top: 8rem;
+    margin-top: 90px;
 }
 
 .banner{
     background: url(../Img/banner/maibeBanner.webp) no-repeat center/cover;
     height: 10rem;
     display: flex;
-    margin-top: 90em;
+    margin-top: 40px;
     align-items: center;
     justify-content: center;
     color: #f2f1ed;
@@ -128,7 +129,7 @@ nav ul li a{
     background: url(../Img/banner/banneDoContato.jpg) no-repeat center/cover;
     height: 10rem;
     display: flex;
-    margin-top: 90em;
+    margin-top: 40px;
     align-items: center;
     justify-content: center;
     color: #f2f1ed;
@@ -258,10 +259,21 @@ nav ul li a{
     border-radius: 60px 30px;
 }
 
+.tabela-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px;  
+}
+
+.tabela-container a:link, .tabela-container a:visited{
+    color: #03484c;
+    text-decoration: none;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 95%;
   }
   
   td, th {
@@ -276,11 +288,7 @@ footer{
 }
 
 
-
-
-
 /* Faz o footer ficar no rodapé da página de enviado */
-
 
 body.paginamensagem {
     display: flex;
@@ -415,6 +423,17 @@ body.paginamensagem {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.55);
 }
 
+/* formatação para a area de contato */
+
+#contato{
+    margin: 50px;
+    border-radius: 20px;
+    border-style: double;
+    border-color: #03484c;
+    background-color: #A5DBA1;
+    color: #291f0c;
+}
+
 @media (max-width: 766px){
     .banner{
         height: 27rem;}
@@ -441,6 +460,8 @@ body.paginamensagem {
 
     nav ul li{
         padding: 0px;
+        margin: 0px;
+        font-size: 25px;
     }
 
     .banner{
@@ -454,6 +475,19 @@ body.paginamensagem {
         flex-direction: column;
     }
 
+    table {
+        overflow-x: auto;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 9%;
+    }
+      
+    td, th {
+        background-color: #f1bb96;
+        border: 2px solid #dddddd;
+        text-align: left;
+        padding: 2px;
+    }
 
 }
 
