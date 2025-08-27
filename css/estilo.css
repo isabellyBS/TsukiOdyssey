@@ -430,9 +430,51 @@ body.paginamensagem {
     border-radius: 20px;
     border-style: double;
     border-color: #03484c;
+    border-width: 8px;
     background-color: #A5DBA1;
     color: #291f0c;
 }
+
+
+.formulario-contato {
+    border-radius: 12px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  
+  .grupo-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  
+  .grupo-form input,
+  .grupo-form select,
+  .grupo-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-top: 8px;
+  }
+  
+  .grupo-form input[type="checkbox"],
+  .grupo-form input[type="radio"] {
+    margin-right: 8px;
+    margin-top: 0;
+  }
+  
+  .grupo-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="range"] {
+    accent-color: #DF8A6C; /* Muda a cor da barra e do botão nas versões modernas */
+  }  
+
 
 @media (max-width: 766px){
     .banner{
