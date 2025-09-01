@@ -263,6 +263,8 @@ nav ul li a{
     max-width: 1300px;
     margin: auto;
     padding: 20px;  
+    width: 100%;
+    overflow-x: auto;
 }
 
 .tabela-container a:link, .tabela-container a:visited{
@@ -424,6 +426,21 @@ body.paginamensagem {
 }
 
 /* formatação para a area de contato */
+.contatoIndex{
+    align-items: left;
+    font-size: large;
+}
+
+.contatoIndex a:link, .contatoIndex a:visited{
+    color: #03484c;
+    text-decoration: none;
+}
+
+.contatoIndex a:hover, .contatoIndex a:active{
+    color: #045c46;
+    transition: 0.4s;
+    text-decoration: none;
+}
 
 #contato{
     margin: 50px;
@@ -477,15 +494,16 @@ body.paginamensagem {
 
 
 @media (max-width: 766px){
-    .banner{
-        height: 27rem;}
-
     .modal{
         margin-top: 100px;
     }
 
     .modal-content{
         max-height: 60vh;
+    }
+
+    header{
+        padding: 5px;
     }
 
     header .container, .sobre-container{
@@ -497,13 +515,17 @@ body.paginamensagem {
     nav ul{
         margin-top: 10px;
         flex-direction: column;
-        padding: 1px;
+        padding: 0px;
     }
 
     nav ul li{
         padding: 0px;
         margin: 0px;
-        font-size: 25px;
+        font-size: 10px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
     }
 
     .banner{

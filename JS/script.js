@@ -150,6 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
               leftSelected.classList.remove('selected');
               rightSelected.classList.remove('selected');
           }, 1000);
+          
       }
       
       // Resetar seleções

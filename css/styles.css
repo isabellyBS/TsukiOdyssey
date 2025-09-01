@@ -120,6 +120,10 @@ footer{
 }
 
 @media (max-width: 766px){
+    header{
+        padding: 5px;
+    }
+
     header .meucontainer{
         flex-direction: column;
         text-align: center;
@@ -129,13 +133,24 @@ footer{
     nav ul{
         margin-top: 10px;
         flex-direction: column;
-        padding: 1px;
+        padding: 0px;
     }
 
     nav ul li{
         padding: 0px;
         margin: 0px;
-        font-size: 25px;
+        font-size: 10px;
+    }
+
+    
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    
+    .banner{
+        height: 550px;
+        padding-top: 300px ;
     }
 }
 
@@ -145,6 +160,16 @@ footer{
         text-align: center;
         scroll-margin-top: 240px;
     }
+    
+    nav ul{
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .banner{
+        height: 50rem;
+    }
+
 }
 
 /* 
@@ -163,7 +188,7 @@ body {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    padding: 25px;
+    /* padding: 25px; */
     width: 100%;
     max-width: 800px;
     text-align: center;
@@ -192,6 +217,13 @@ h1 {
     position: relative;
 }
 
+#left-column, #right-column{
+    background-color: #9bc6d4;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
 .column {
     width: 45%;
     display: flex;
@@ -199,16 +231,29 @@ h1 {
     gap: 15px;
 }
 
-.item {
+.item{
     background-color: #3498db;
     color: white;
-    padding: 15px;
+    padding: 12px;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
     font-weight: 500;
     user-select: none;
+}
+
+.item.volta{
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-weight: 500;
+    user-select: none;
+    transition-duration: 0.5s;
 }
 
 .item:hover {
